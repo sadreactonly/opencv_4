@@ -12,4 +12,5 @@ enum CVPathFrom {
   URL,
   GALLERY_CAMERA,
   ASSETS,
+  RAW
 }

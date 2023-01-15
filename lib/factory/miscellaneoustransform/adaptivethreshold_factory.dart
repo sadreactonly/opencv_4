@@ -21,6 +21,7 @@ class AdaptiveThresholdFactory {
     required int thresholdType,
     required int blockSize,
     required double constantValue,
+    Uint8List? rawData
   }) async {
     File _file;
     Uint8List _fileAssets;
@@ -57,6 +58,19 @@ class AdaptiveThresholdFactory {
           "pathType": 2,
           "pathString": '',
           "data": await _file.readAsBytes(),
+          'maxValue': maxValue,
+          'adaptiveMethod': adaptiveMethodTemp,
+          'thresholdType': thresholdTypeTemp,
+          'blockSize': blockSize,
+          'constantValue': constantValue
+        });
+
+        break;
+      case CVPathFrom.RAW:
+        result = await platform.invokeMethod('adaptiveThreshold', {
+          "pathType": 4,
+          "pathString": '',
+          "data": rawData,
           'maxValue': maxValue,
           'adaptiveMethod': adaptiveMethodTemp,
           'thresholdType': thresholdTypeTemp,

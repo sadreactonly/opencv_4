@@ -589,25 +589,25 @@ class Cv2 {
   }
 
   /// [adaptiveThreshold] function of Module: Miscellaneous Image Transformations
-  static Future<dynamic> adaptiveThreshold({
-    CVPathFrom pathFrom = CVPathFrom.ASSETS,
-    required String pathString,
-    required double maxValue,
-    required int adaptiveMethod,
-    required int thresholdType,
-    required int blockSize,
-    required double constantValue,
-  }) async {
+  static Future<dynamic> adaptiveThreshold(
+      {CVPathFrom pathFrom = CVPathFrom.ASSETS,
+      required String pathString,
+      required double maxValue,
+      required int adaptiveMethod,
+      required int thresholdType,
+      required int blockSize,
+      required double constantValue,
+      Uint8List? rawData}) async {
     /// Variable to store operation result
     final dynamic result = await AdaptiveThresholdFactory.adaptiveThreshold(
-      pathFrom: pathFrom,
-      pathString: pathString,
-      maxValue: maxValue,
-      adaptiveMethod: adaptiveMethod,
-      thresholdType: thresholdType,
-      blockSize: blockSize,
-      constantValue: constantValue,
-    );
+        pathFrom: pathFrom,
+        pathString: pathString,
+        maxValue: maxValue,
+        adaptiveMethod: adaptiveMethod,
+        thresholdType: thresholdType,
+        blockSize: blockSize,
+        constantValue: constantValue,
+        rawData: rawData);
 
     /// Function returns the response from method channel
     return result;
