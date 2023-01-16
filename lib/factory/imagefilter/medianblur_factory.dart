@@ -55,7 +55,7 @@ class MedianBlurFactory {
         result = await platform.invokeMethod(
           'medianBlur',
           {
-            "pathType": 2,
+            "pathType": 4,
             "pathString": '',
             "data": rawData,
             'kernelSize': kernelSizeTemp,
