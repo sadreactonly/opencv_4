@@ -346,6 +346,7 @@ class Cv2 {
     required List<double> kernelSize,
     required List<double> anchorPoint,
     required int borderType,
+    Uint8List? rawData
   }) async {
     /// Variable to store operation result
     final Uint8List? result = await BlurFactory.blur(
@@ -354,6 +355,7 @@ class Cv2 {
       kernelSize: kernelSize,
       anchorPoint: anchorPoint,
       borderType: borderType,
+      rawData:rawData
     );
 
     /// Function returns the response from method channel
@@ -478,12 +480,15 @@ class Cv2 {
     CVPathFrom pathFrom = CVPathFrom.ASSETS,
     required String pathString,
     required int kernelSize,
+    Uint8List? rawData
+
   }) async {
     /// Variable to store operation result
     final Uint8List? result = await MedianBlurFactory.medianBlur(
       pathFrom: pathFrom,
       pathString: pathString,
       kernelSize: kernelSize,
+      rawData: rawData
     );
 
     /// Function returns the response from method channel

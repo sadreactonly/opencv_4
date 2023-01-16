@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5ef953-19cb-4a83-b3e8-2711c5fdd09b" name="Changes" comment="Added raw data field to MedianBlur">
-      <change beforePath="$PROJECT_DIR$/lib/factory/imagefilter/medianblur_factory.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/factory/imagefilter/medianblur_factory.dart" afterDir="false" />
+    <list default="true" id="ba5ef953-19cb-4a83-b3e8-2711c5fdd09b" name="Changes" comment="Added raw data field to MedianBlur Fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/opencv_4.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/opencv_4.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673871057190</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added raw data field to MedianBlur Fix">
+      <created>1673871072622</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673871072622</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -109,6 +117,7 @@
     <MESSAGE value="Gradle update" />
     <MESSAGE value="Added raw data field to Blur" />
     <MESSAGE value="Added raw data field to MedianBlur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added raw data field to MedianBlur" />
+    <MESSAGE value="Added raw data field to MedianBlur Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added raw data field to MedianBlur Fix" />
   </component>
 </project>
