@@ -16,6 +16,7 @@ class BlurFactory {
   static Future<Uint8List?> blur({
     required CVPathFrom pathFrom,
     required String pathString,
+    Uint8List? rawData,
     required List<double> kernelSize,
     required List<double> anchorPoint,
     required int borderType,
@@ -50,6 +51,21 @@ class BlurFactory {
             "pathType": 2,
             "pathString": '',
             "data": await _file.readAsBytes(),
+            "kernelSize": kernelSizeTemp,
+            "anchorPoint": anchorPoint,
+            "borderType": borderTypeTemp,
+          },
+        );
+
+        break;
+      case CVPathFrom.RAW:
+        _file = await DefaultCacheManager().getSingleFile(pathString);
+        result = await platform.invokeMethod(
+          'blur',
+          {
+            "pathType": 4,
+            "pathString": '',
+            "data": rawData,
             "kernelSize": kernelSizeTemp,
             "anchorPoint": anchorPoint,
             "borderType": borderTypeTemp,
