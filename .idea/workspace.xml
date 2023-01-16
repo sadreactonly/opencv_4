@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5ef953-19cb-4a83-b3e8-2711c5fdd09b" name="Changes" comment="Gradle update">
+    <list default="true" id="ba5ef953-19cb-4a83-b3e8-2711c5fdd09b" name="Changes" comment="Added raw data field to Blur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/factory/imagefilter/BlurFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/factory/imagefilter/BlurFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/BlurFactory.mm" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/BlurFactory.mm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/factory/imagefilter/blur_factory.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/factory/imagefilter/blur_factory.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/factory/imagefilter/MedianBlurFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ar/fgsoruco/opencv4/factory/imagefilter/MedianBlurFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/MedianBlurFactory.mm" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/MedianBlurFactory.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/factory/imagefilter/medianblur_factory.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/factory/imagefilter/medianblur_factory.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673868805575</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added raw data field to Blur">
+      <created>1673870931065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673870931065</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -96,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Gradle update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gradle update" />
+    <MESSAGE value="Added raw data field to Blur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added raw data field to Blur" />
   </component>
 </project>

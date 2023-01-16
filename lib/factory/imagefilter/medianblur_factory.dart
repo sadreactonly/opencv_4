@@ -17,6 +17,7 @@ class MedianBlurFactory {
     required CVPathFrom pathFrom,
     required String pathString,
     required int kernelSize,
+    Uint8List? rawData
   }) async {
     File _file;
     Uint8List _fileAssets;
@@ -44,6 +45,19 @@ class MedianBlurFactory {
             "pathType": 2,
             "pathString": '',
             "data": await _file.readAsBytes(),
+            'kernelSize': kernelSizeTemp,
+          },
+        );
+
+        break;
+      case CVPathFrom.RAW:
+        _file = await DefaultCacheManager().getSingleFile(pathString);
+        result = await platform.invokeMethod(
+          'medianBlur',
+          {
+            "pathType": 2,
+            "pathString": '',
+            "data": rawData,
             'kernelSize': kernelSizeTemp,
           },
         );
